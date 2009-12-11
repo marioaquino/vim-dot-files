@@ -1,1 +1,6 @@
+set number
+
 :colorscheme vividchalk
+
+"Syntax highlighting
+:syntax on
