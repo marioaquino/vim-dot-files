@@ -4,3 +4,6 @@ set number
 
 "Syntax highlighting
 :syntax on
+
+"Map rdoc extension as syntax highlightable
+autocmd BufNewFile,BufRead *.{rd,rdoc} set filetype=rdoc
