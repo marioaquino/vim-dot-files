@@ -1,0 +1,51 @@
+" These settings are for MacVim
+" where I removed the various MacVim menus that conflicted 
+" with the Apple-key mappings that I wanted
+" Do not set the colorscheme here!
+iunmenu File.Save
+imenu <silent> File.Save <Esc> :if expand("%") == "" <Bar> browse confirm w<Bar>else<Bar>confirm w<Bar>endif<CR>
+
+" Unmap Apple+T for FuzzyFinder
+" macmenu &File.New\ Tab key=<nop>
+" nnoremap <D-t> :FuzzyFinderFile\*\*/<CR>
+
+" Bookmarks
+" macmenu &Tools.Make key=<nop>
+" nnoremap <D-b> :FuzzyFinderFavFile<CR>
+
+" Window up/down are same as up/down in Vim
+map <D-j> <C-W>j
+map <D-k> <C-W>k
+
+" Window left/right are same as left/right in Vim
+map <D-h> <C-W>h
+map <D-l> <C-W>l
+
+" Map option-up/down like Textmate, which take
+" you to the similar indent-level of the line you're on.
+map <M-Up> :call NextIndent(0, 0, 0, 1)<CR>
+vmap <M-Up> <Esc>:call NextIndent(0, 0, 0, 1)<CR>m'gv''
+omap <M-Up> :call NextIndent(0, 0, 0, 1)<CR>
+
+map <M-Down> :call NextIndent(0, 1, 0, 1)<CR>
+vmap <M-Down> <Esc>:call NextIndent(0, 1, 0, 1)<CR>m'gv''
+omap <M-Down> :call NextIndent(0, 1, 0, 1)<CR>
+
+
+" highlight sr does something to inverse the status line, 
+" which makes it look better
+" See help status-line
+" set highlight+=sr
+" set columns=90 lines=65
+" set transparency=1
+set nocursorline
+
+" fullscreen maximizes vertically AND horizontally
+set fuoptions=maxvert,maxhorz
+
+" Read local gvimrc file, for machine-local mods that are not checked into repo.
+" $HOME is necessary for some reason -- filereadable
+" doesn't interpolate the ~/
+if filereadable($HOME . "/.vim/personal/gvimrc.local")
+    so ~/.vim/personal/gvimrc.local
+endif

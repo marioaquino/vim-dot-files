@@ -1,9 +1,36 @@
-set number
+"set number
+set hlsearch
+set nocp
+set incsearch
+filetype plugin indent on
+
+"Syntax highlighting
+syntax enable
 
 :colorscheme vividchalk
 
-"Syntax highlighting
-:syntax on
-
 "Map rdoc extension as syntax highlightable
 autocmd BufNewFile,BufRead *.{rd,rdoc} set filetype=rdoc
+
+" set the directory on indent of the explorer = to the directory
+" of the current buffer
+set bsdir=buffer
+
+set dictionary=/usr/share/dict/words
+
+" Don't show the toolbar
+set guioptions-=T
+      
+" ------------ Tab and indent settings ------------
+set smartindent
+set autoindent
+
+" Softtabstop is shiftwidth is how many spaces are used for auto-indenting
+set softtabstop=4
+set shiftwidth=4
+
+so ~/.vim/personal/mappings.vim
+
+if has('mac')
+    so ~/.vim/personal/macvimrc
+endif
