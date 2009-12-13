@@ -9,6 +9,8 @@ Includes:
 * FuzzyFinder
 * git
 * fugitive
+* upAndDown
+* vim-cucumber
 
 == Note on Patches/Pull Requests
  
