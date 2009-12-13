@@ -11,6 +11,7 @@ Includes:
 * fugitive
 * upAndDown
 * vim-cucumber
+* vim-rails
 
 == Note on Patches/Pull Requests
  
