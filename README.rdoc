@@ -6,6 +6,9 @@ Includes:
 * vimrc file for symbolic linking (under personal dir)
 * ColorSamplePack
 * Syntastic
+* FuzzyFinder
+* git
+* fugitive
 
 == Note on Patches/Pull Requests
  
