@@ -30,6 +30,7 @@ set softtabstop=4
 set shiftwidth=4
 
 so ~/.vim/personal/mappings.vim
+so ~/.vim/personal/plugins.vim
 
 if has('mac')
     so ~/.vim/personal/macvimrc
