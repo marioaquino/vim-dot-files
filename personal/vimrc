@@ -26,8 +26,8 @@ set smartindent
 set autoindent
 
 " Softtabstop is shiftwidth is how many spaces are used for auto-indenting
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 
 so ~/.vim/personal/mappings.vim
 so ~/.vim/personal/plugins.vim
