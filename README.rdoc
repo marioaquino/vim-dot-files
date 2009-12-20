@@ -12,6 +12,7 @@ Includes:
 * upAndDown
 * vim-cucumber
 * vim-rails
+* NERDTree
 
 == Note on Patches/Pull Requests
  

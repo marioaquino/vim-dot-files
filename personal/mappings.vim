@@ -21,3 +21,6 @@ map <leader>t :FufFile**/<CR>
 " Renew cache in Fuzzy Finder -- use this when there's new files
 " that fuzzy finder doesn't know about.
 map <leader>R :FufRenewCache<CR>
+
+" NERD Tree
+map <leader>nt :execute 'NERDTreeToggle ' . getcwd()<CR>
